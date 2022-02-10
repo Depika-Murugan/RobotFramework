@@ -16,6 +16,12 @@ TC1
     Log To Console    ${COLORS}[0]
 
 TC2
+
+      FOR  ${robot}    IN    ${COLORS}
+       Log To Console    ${robot}
+      END
+
+TC3
       ${count}   Get Length   ${Colors}
       Log To Console    ${count}
       FOR  ${i}    IN    0    1    2
